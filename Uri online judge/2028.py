@@ -11,22 +11,25 @@ while True:
         ans = ans + 1
 
         if ans == 1:
-            print("Caso ", cs, ": ", ans, " numero", sep="", end="\n")
+            print("Caso %d: %d numero" %(cs, ans), sep="", end="\n")
         else:
-            print("Caso ", cs, ": ", ans, " numeros", sep="", end="\n")
+            print("Caso %d: %d numeros" %(cs, ans), sep="", end="\n")
         
         if ans == 1:
             print("0", sep="", end="\n")
         else:
             print("0 ", sep="", end="")
-            
+
+        cnt = 2
+
         for i in range(1, n+1):
             for j in range(0, i):
-                if i == n and j == i-1:
+                if cnt == ans:
                     print(i, sep="", end="\n")
                 else:
-                    print(i, sep="", end= " ")
-        cs = cs + 1
+                    print(i, sep="", end=" ")
+                cnt += 1
+        cs += 1
     except EOFError:
         break;
 
