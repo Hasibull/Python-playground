@@ -29,6 +29,7 @@ while True:
                 else:
                     print(i, sep="", end=" ")
                 cnt += 1
+        print("")
         cs += 1
     except EOFError:
         break;
