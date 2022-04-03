@@ -1,6 +1,7 @@
 *.c
 *.cpp
 *.java
-*.0
+*.o
 *.exe
 *.class
+*.js
