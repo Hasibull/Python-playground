@@ -33,5 +33,3 @@ while True:
         cs += 1
     except EOFError:
         break;
-
-
