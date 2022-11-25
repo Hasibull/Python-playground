@@ -8,5 +8,10 @@ class Car:
     def __str__(self) -> str:
         return 'a {self.color} car'.format(self = self)
     
+    # it will work when inspect
+    def __repr__(self) -> str:
+        return 'mileage is {self.mileage}'.format(self = self)
+    
 my_car = Car('red', 12345)
-print(my_car)
+print(my_car) # description
+my_car # inspect
