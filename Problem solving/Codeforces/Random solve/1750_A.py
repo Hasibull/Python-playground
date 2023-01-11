@@ -1,7 +1,7 @@
 tc = int(input())  # taking the test case number
 
 while tc > 0:
-    n = int(input())  # taking the length of the string
+    n = int(input())
     arr = input()
     arr = arr.split()
     arr = [int(val) for val in arr]
